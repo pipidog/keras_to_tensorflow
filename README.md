@@ -1,5 +1,5 @@
 # Convert Your Keras Model to Tensorflow 
-Tensorflow is a low-level deep learning package which requires users to deal with many complicated elements to construct a successful model. However, tensorflow is also powerful for production that's why most companies choose tensorflow as their service platform. 
+Tensorflow is a low-level deep learning package which requires users to deal with many complicated elements to construct a successful model. However, tensorflow is also powerful for production that's why most companies choose tensorflow as their service platform. 
 
 In constrast, Keras provides a user-friendly API to help users quickly build complicated deep learning models but it is not appropriate for making products.
 

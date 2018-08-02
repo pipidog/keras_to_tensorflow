@@ -8,7 +8,7 @@ import numpy as np
 np.random.seed(0)
 
 # parameter ==========================
-wkdir = '/home/pipidog/work/keras_to_tensorflow'
+wkdir = '/home/pipidog/keras_to_tensorflow'
 pb_filename = 'model.pb'
 
 # build a keras model ================
@@ -78,10 +78,12 @@ with tf.Session() as sess:
     writer.flush()
     writer.close()
     # print all operation names 
+    print('\n===== ouptut operation names =====\n')
     for op in sess.graph.get_operations():
       print(op)
     # inference by the model (op name must comes with :0 to specify the index of its output)
     tensor_output = sess.graph.get_tensor_by_name('import/dense_3/Sigmoid:0')
     tensor_input = sess.graph.get_tensor_by_name('import/dense_1_input:0')
     predictions = sess.run(tensor_output, {tensor_input: x})
+    print('\n===== output predicted results =====\n')
     print(predictions)

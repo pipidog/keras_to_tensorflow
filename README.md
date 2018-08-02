@@ -58,4 +58,8 @@ Remember that, all the layer names should end with ":0" (or something else based
 
 If everything goes well, you should be able to see the predicted results now. 
 
+<p align="center">
+<img src="./img/predict_result.png">
+</p>
+
 A full example can be found [here](./keras_to_tensorflow.py). Enjoy it! 
